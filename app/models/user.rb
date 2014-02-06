@@ -6,6 +6,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable,
          :omniauthable, :omniauth_providers => [:facebook]
 
+  after_create :assign_default_role
+
   def self.find_for_facebook_oauth(auth)
     where(auth.slice(:provider, :uid)).first_or_create do |user|
       user.provider = auth.provider
@@ -26,4 +28,11 @@ class User < ActiveRecord::Base
       end
     end
   end
+
+  private
+
+  def assign_default_role
+    add_role(:user) if roles.blank?
+  end
+
 end
