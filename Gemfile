@@ -13,6 +13,7 @@ gem 'cancan'
 gem 'devise'
 gem 'devise_invitable'
 gem 'rolify'
+gem 'omniauth-facebook'
 
 gem 'haml-rails'
 gem 'simple_form'
