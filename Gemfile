@@ -23,6 +23,7 @@ group :development do
   gem 'html2haml'
   gem 'quiet_assets'
   gem 'rails_layout'
+  gem 'jazz_hands', '~> 0.5.1'                        # Pry-based enhancements for the default Rails 3 console
 end
 group :development, :test do
   gem 'factory_girl_rails'
