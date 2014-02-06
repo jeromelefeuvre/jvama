@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Jvama::Application.config.secret_key_base = '630c8ebacd96eda02a1e90e1f4b3539aee51d2d27045991572e840b27b724f3041f51bdb6a5cf4982d37de16d4851d823137cf69739ae24b892daeb6284ba174'
+Jvama::Application.config.secret_key_base = ENV['JVAMA_SECRET_KEY']
