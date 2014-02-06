@@ -8,15 +8,19 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', '>= 3.0.0.0'
+
 gem 'cancan'
 gem 'devise'
 gem 'devise_invitable'
-gem 'figaro'
-gem 'haml-rails'
-gem 'pg'
 gem 'rolify'
+
+gem 'haml-rails'
 gem 'simple_form'
+gem 'pg'
+
 gem 'thin'
+gem 'figaro'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
@@ -25,10 +29,12 @@ group :development do
   gem 'rails_layout'
   gem 'jazz_hands', '~> 0.5.1'                        # Pry-based enhancements for the default Rails 3 console
 end
+
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
 end
+
 group :test do
   gem 'capybara'
   gem 'database_cleaner', '1.0.1'
