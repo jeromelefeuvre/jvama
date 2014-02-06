@@ -17,6 +17,8 @@ gem 'omniauth-facebook'
 
 gem 'haml-rails'
 gem 'simple_form'
+gem 'carrierwave'
+
 gem 'pg'
 
 gem 'thin'
