@@ -12,7 +12,7 @@ gem 'bootstrap-sass', '>= 3.0.0.0'
 gem 'cancan'
 gem 'devise'
 gem 'devise_invitable'
-gem 'rolify'
+gem 'rolify', :git => "https://github.com/EppO/rolify.git", :branch => "master"
 gem 'omniauth-facebook'
 
 gem 'haml-rails'
