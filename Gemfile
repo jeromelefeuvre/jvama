@@ -27,7 +27,8 @@ group :development do
   gem 'html2haml'
   gem 'quiet_assets'
   gem 'rails_layout'
-  gem 'jazz_hands', '~> 0.5.1'                        # Pry-based enhancements for the default Rails 3 console
+  gem 'jazz_hands', '~> 0.5.1'          # Pry-based enhancements for the default Rails 3 console
+  gem "letter_opener"                   # Preview mail in the browser instead of sending
 end
 
 group :development, :test do
