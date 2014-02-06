@@ -1,0 +1,12 @@
+- if user_signed_in?
+  %li= link_to 'Logout', destroy_user_session_path, :method=>'delete'
+- else
+  %li= link_to 'Login', new_user_session_path
+  %li
+    = link_to user_omniauth_authorize_path(:facebook), :class => "btn btn-block btn-social btn-xs btn-facebook" do
+      %i{ :class => "fa fa-facebook"}
+      | Facebook
+- if user_signed_in?
+  %li= link_to current_user.email, edit_user_registration_path
+- else
+  %li= link_to 'Sign up', new_user_registration_path

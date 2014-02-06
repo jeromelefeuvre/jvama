@@ -11,5 +11,4 @@
     .form-group
       = f.label :password_confirmation
       = f.password_field :password_confirmation, class: 'form-control'
-    = link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook)
     = f.submit 'Sign up', :class => 'button right'
